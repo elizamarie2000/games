@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Games for Friends</title>
+<meta name="description" content="Four quiet games to play with a friend, each on your own screen.">
+<style>
+@font-face { font-family: "Courier Prime"; src: url("CourierPrime.woff2") format("woff2"); font-display: swap; }
+:root { --paper: #f8f6f1; --ink: #1c1b19; --soft: #6e6b64; --hair: #d9d5cb; --tint: #ebe7dd; --ribbon: #b3261e; }
+* { box-sizing: border-box; }
+html { background: var(--paper); }
+body { margin: 0; min-height: 100dvh; background: var(--paper); color: var(--ink); font: 16px/1.5 "Courier Prime", "Courier New", Courier, monospace; }
+main { max-width: 560px; margin: 0 auto; padding: 14vh 20px 56px; }
+h1 { margin: 0 0 10px; font-size: clamp(36px, 9vw, 52px); font-weight: 400; line-height: 1.1; letter-spacing: -.02em; }
+h1::after { content: ""; display: inline-block; width: .5em; height: .08em; margin-left: .1em; background: var(--ribbon); animation: blink 1.2s steps(2) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+p { margin: 0; color: var(--soft); }
+ul { list-style: none; margin: 40px 0 0; padding: 0; border-top: 1px solid var(--ink); }
+a { display: block; padding: 16px 4px; border-bottom: 1px solid var(--hair); color: inherit; text-decoration: none; transition: background .15s; }
+a:hover, a:focus-visible { background: var(--tint); outline: none; }
+b { display: block; font-size: 20px; font-weight: 400; }
+span { color: var(--soft); font-size: 14px; }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>Games for Friends</h1>
+  <p>Pick a game, start a room and send your friend the code. Nothing to install.</p>
+  <ul>
+    <li><a href="../paper-boats/"><b>Paper Boats</b><span>Hide your boats and hunt down your friend's.</span></a></li>
+    <li><a href="../secret-word/"><b>Secret Word</b><span>Work out their five-letter word before they work out yours.</span></a></li>
+    <li><a href="../blanks/"><b>Blanks</b><span>Take turns choosing a word to fill in, letter by letter.</span></a></li>
+    <li><a href="../noughts-crosses/"><b>Noughts &amp; Crosses</b><span>The pencil-and-paper classic, with a running score.</span></a></li>
+  </ul>
+</main>
+</body>
+</html>
